@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Movie Night</title>
+  	<meta charset="UTF-8">
+    <meta name="description" content="Using forms">
+    <meta name="keywords" content="forms, FormData">
+    <meta name="author" content="JE Padilla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link href="css/all.css" rel="stylesheet" type="text/css" />
+    <script src="js/juan.js"></script>
+  </head>
+  
+  <body>
+    <fieldset>
+      <legend>Sign-In</legend>
+      <form id="form">
+        <div>
+            <label for="name">Name</label></br>
+            <input id="nameU" name="nameU" placeholder="name" value="">
+            <div class="error" id="nameErr"> </div>
+        </div>
+        <br />
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="email@site.com" value="">
+            <div class="error" id="emailErr"> </div>
+        </div>
+        <br />
+        <div id="buttons-row">
+        <div class="buttons">
+            <button id="send" onclick="theyreTalking()">Send</button>
+            <button id="reset" onclick="theyreTalking()">Reset</button>
+            <button id="save" onclick="theyreTalking()">Save</button>
+        </div>
+        </div>
+      </form>
+    </fieldset>
+  </body>
+</html>
